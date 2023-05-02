@@ -4,7 +4,7 @@ import configs from '../../helpers/configs'
 import './css/contact.css'
 
 const {content} = configs;
-const {email, submit_now, name, message, contact_us} = configs;
+const {email, submit_now, name, message, contact_us} = content;
 
 const Contact = () => {
     const {localContent, setLocalContent} = useContext(LocalStorageCtx);

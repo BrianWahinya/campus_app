@@ -26,6 +26,7 @@ const PopularCourses = () => {
         setTimeout(() => {
             fetch(fetch_url, {
                 method: "POST",
+                mode: "cors",
                 headers: {
                     "Content-Type": "application/json; charset=utf-8"
                 },
