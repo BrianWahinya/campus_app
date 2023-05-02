@@ -1,6 +1,6 @@
 const configs = {
     // host: "http://localhost/webtech_api/back-end/endpoints",
-    host: "https://jkuatwebtech.000webhostapp.com/backend/endpoints",    
+    host: "http://16.16.92.145/backend/endpoints",
     brand: "SCIT",
     motto: {
         en: "School of Computing and Information Technology",
