@@ -1,0 +1,11 @@
+export {default as Home} from "./Home/Home.jsx";
+export {default as Courses} from "./Courses/Courses.jsx";
+export {default as Departments} from "./Departments/Departments.jsx";
+export {default as News} from "./News/News.jsx";
+export {default as About} from "./About/About.jsx";
+export {default as Error} from "./Error/Error.jsx";
+export {default as Login} from "./Login/Login.jsx";
+export {default as Student} from "./Student/Student.jsx";
+export {default as Webadmin} from "./Webadmin/Webadmin.jsx";
+export {default as Academics} from "./Academics/Academics.jsx";
+export {default as Contact} from "./Contact/Contact.jsx";

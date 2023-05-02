@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Super from './Super';
 import './App.css';
+// import './css/main.css';
+import configs from './helpers/configs';
+
+const {home, homeB, homeC, webadmin, student, error} = configs.links;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <section className="app super_container">
+      <Router>
+        <Routes>
+          <Route path={home} element={<Super entity="home"/>} />
+          <Route path={homeB} element={<Super entity="home"/>} />
+          <Route path={homeC} element={<Super entity="home"/>} />
+          <Route path={webadmin} element={<Super entity="webadmin"/>} />
+          <Route path={student} element={<Super entity="student"/>} />
+          <Route path={error} element={<Super entity="error"/>} />
+        </Routes>
+      </Router>
+    // </section>
   );
 }
 

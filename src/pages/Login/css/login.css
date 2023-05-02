@@ -1,0 +1,92 @@
+.modal-content:has(.login-form-box) {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: rgba(57, 94, 175, 0.6117647059);
+}
+.modal-content:has(.login-form-box) .modal-header, .modal-content:has(.login-form-box) .modal-body, .modal-content:has(.login-form-box) .modal-footer {
+  border-color: rgba(57, 94, 175, 0.8274509804);
+}
+
+.login-form-box {
+  max-width: 400px;
+  min-width: 350px;
+  background: rgba(241, 247, 254, 0.8980392157);
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+}
+.login-form-box .login-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+  /*Form text*/
+  /*Inputs box*/
+  /*Button*/
+}
+.login-form-box .login-form .title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.login-form-box .login-form .subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+.login-form-box .login-form .form-container {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 1rem 0 0.5rem;
+  width: 100%;
+}
+.login-form-box .login-form .form-container .input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+}
+.login-form-box .login-form .btnLogin {
+  background-color: rgba(57, 94, 175, 0.7254901961);
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login-form-box .login-form .btnLogin:hover {
+  background-color: #395faf;
+}
+.login-form-box .login-form .btnLogin.btn-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.login-form-box .login-form .login-error {
+  color: #a32626;
+}
+.login-form-box .form-section {
+  padding: 16px;
+  font-size: 0.85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 -1px;
+}
+.login-form-box .form-section p {
+  text-align: center;
+}
+.login-form-box .form-section a {
+  font-weight: bold;
+  color: #0066ff;
+  transition: color 0.3s ease;
+}
+.login-form-box .form-section a:hover {
+  color: #005ce6;
+  text-decoration: underline;
+}

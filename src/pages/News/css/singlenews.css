@@ -1,0 +1,158 @@
+.blog {
+  width: 100%;
+  background: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.blog_content {
+  width: 100%;
+}
+
+.blog_title {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #384158;
+}
+
+.blog_meta {
+  margin-top: 14px;
+}
+
+.blog_meta ul li {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  color: #b5b8be;
+}
+
+.blog_meta ul li a {
+  font-size: 14px;
+  color: #b5b8be;
+  transition: all 200ms ease;
+}
+
+.blog_meta ul li a:hover {
+  color: #14bdee;
+}
+
+.blog_meta ul li:not(:last-child)::after {
+  display: inline-block;
+  content: "|";
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.blog_image {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.blog_image img {
+  max-width: 100%;
+}
+
+.blog_content p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #76777a;
+  margin-top: 29px;
+  margin-bottom: 0;
+}
+
+.blog_quote {
+  margin-top: 24px;
+  margin-bottom: -2px;
+}
+
+.blog_quote i {
+  font-size: 30px;
+  color: #14bdee;
+}
+
+.blog_quote div {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.66;
+  color: #384158;
+  padding-left: 36px;
+}
+
+.blog_subtitle {
+  font-size: 24px;
+  color: #384158;
+  line-height: 1.2;
+  margin-top: 48px;
+}
+
+.blog_images {
+  margin-top: 31px;
+  margin-bottom: 35px;
+}
+
+.blog_image_small {
+  width: 100%;
+}
+
+.blog_image_small img {
+  max-width: 100%;
+}
+
+.blog_extra {
+  margin-top: 39px;
+  border-bottom: solid 1px #ebebeb;
+  padding-bottom: 18px;
+}
+
+.blog_tags span {
+  color: #384158;
+}
+
+.blog_tags ul {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.blog_tags ul li {
+  display: inline-block;
+}
+
+.blog_tags ul li a {
+  font-size: 14px;
+  color: #b5b8be;
+  transition: all 200ms ease;
+}
+
+.blog_tags ul li a:hover {
+  color: #14bdee;
+}
+
+.blog_social span {
+  font-size: 14px;
+  color: #384158;
+}
+
+.blog_social ul {
+  display: inline-block;
+  margin-left: 21px;
+}
+
+.blog_social ul li {
+  display: inline-block;
+}
+
+.blog_social ul li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.blog_social ul li i {
+  font-size: 14px;
+  color: #b5b8be;
+  transition: all 200ms ease;
+}
+
+.blog_social ul li:hover i {
+  color: #14bdee;
+}

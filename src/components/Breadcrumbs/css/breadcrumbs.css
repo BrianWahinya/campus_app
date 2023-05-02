@@ -1,0 +1,53 @@
+.breadcrumbsDiv {
+  width: 100%;
+  height: 170px;
+  background: #f2f4f5;
+  border-bottom: solid 1px #edeff0;
+  display: flex;
+  align-items: end;
+}
+.breadcrumbsDiv .breadcrumbs_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-left: 3px;
+}
+.breadcrumbsDiv .breadcrumbs_container .col {
+  display: flex;
+  align-items: center;
+}
+.breadcrumbsDiv .breadcrumbs_container .col ul {
+  margin: 0;
+  text-align: left;
+  vertical-align: middle;
+}
+.breadcrumbsDiv .breadcrumbs ul li {
+  display: inline-block;
+  position: relative;
+}
+.breadcrumbsDiv .breadcrumbs ul li:not(:last-child)::after {
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "\f105";
+  margin-left: 7px;
+  margin-right: 4px;
+  color: #384158;
+}
+.breadcrumbsDiv .breadcrumbs ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #384158;
+  transition: all 200ms ease;
+}
+.breadcrumbsDiv .breadcrumbs ul li a:hover {
+  color: #233e77;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1199px) {
+  .breadcrumbsDiv {
+    height: 105px;
+  }
+}
