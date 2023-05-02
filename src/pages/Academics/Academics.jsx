@@ -1,11 +1,13 @@
 import { useContext, useEffect, useState } from 'react';
 import { Breadcrumbs, CustomModal, Loader, Sidebar } from '../../components';
 import LocalStorageCtx from '../../contexts/LocalStorage';
+import configs from '../../helpers/configs';
 import { DEPE } from '../../helpers/utils';
 import './css/academics.css';
 import SingleCourse from './SingleCourse';
 
-const fetch_url = "http://localhost/webtech_api/back-end/endpoints/coursesGetAllByLang.php"
+const {host} = configs;
+const fetch_url = `${host}/coursesGetAllByLang.php`;
 const Academics = () => {
     const {localContent, setLocalContent} = useContext(LocalStorageCtx);
 	const lang = localContent.lang;

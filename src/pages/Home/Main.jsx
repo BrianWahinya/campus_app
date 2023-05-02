@@ -19,7 +19,7 @@ const Main = () => {
         return <form key={idx} className="home_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between">
             <div className="d-flex flex-row align-items-center justify-content-start">
                 {/* <input type="search" className="home_search_input" placeholder="Keyword Search" required="required" /> */}
-                <select className="dropdown_item_select home_search_input">
+                {/* <select className="dropdown_item_select home_search_input">
                     <option>{select_cert[lang]}</option>
                     <option>Diploma</option>
                     <option>Degree</option>
@@ -30,9 +30,9 @@ const Main = () => {
                     <option>{select_course[lang]}</option>
                     <option>Course A</option>
                     <option>Course B</option>
-                </select>
+                </select> */}
             </div>
-            <button type="submit" className="home_search_button">{search[lang]}</button>
+            {/* <button type="submit" className="home_search_button">{search[lang]}</button> */}
         </form>
     }
 

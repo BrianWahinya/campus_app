@@ -4,9 +4,9 @@ import { Loader } from "../../components";
 import LocalStorageCtx from "../../contexts/LocalStorage";
 import configs from "../../helpers/configs";
 
-const { text } = configs;
+const { text, host } = configs;
 const { title, message } = text.latest_news;
-const fetch_url = "http://localhost/webtech_api/back-end/endpoints/newsGetAllByLang.php"
+const fetch_url = `${host}/newsGetAllByLang.php`;
 
 const UpcomingNews = () => {
     const {localContent, setLocalContent} = useContext(LocalStorageCtx);

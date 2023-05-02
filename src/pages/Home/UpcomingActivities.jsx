@@ -4,9 +4,9 @@ import LocalStorageCtx from "../../contexts/LocalStorage";
 import configs from "../../helpers/configs";
 import { DEPE } from "../../helpers/utils";
 
-const { text } = configs;
+const { text, host } = configs;
 const { title, message } = text.upcoming_act;
-const fetch_url = "http://localhost/webtech_api/back-end/endpoints/activityGetAllByLang.php"
+const fetch_url = `${host}/activityGetAllByLang.php`;
 
 const UpcomingNews = () => {
     const {localContent, setLocalContent} = useContext(LocalStorageCtx);

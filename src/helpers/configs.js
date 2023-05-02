@@ -1,5 +1,6 @@
 const configs = {
-    host: "http://localhost/webtech_api/back-end/endpoints",
+    // host: "http://localhost/webtech_api/back-end/endpoints",
+    host: "https://jkuatwebtech.000webhostapp.com/back-end/endpoints",    
     brand: "SCIT",
     motto: {
         en: "School of Computing and Information Technology",
@@ -17,10 +18,13 @@ const configs = {
     content: {
         email: {en: 'Email', sw: 'Barua pepe'},
         phone: {en: 'Phone', sw: 'Simu'},
+        name: {en: 'Name', sw: 'Jina'},
+        message: {en: 'Message', sw: 'Ujumbe'},
         quicklinks: {en: 'Quick Links', sw: 'Viungo Haraka'},
         home: {en: 'Home', sw: 'Makao'},
         academics: {en: 'Academics', sw: 'Taaluma'},
         contact: {en: 'Contacts', sw: 'Anwani'},
+        contact_us: {en: 'Contact Us', sw: 'Wasiliana Nasi'},
         about: {en: 'About', sw: 'Kuhusu'},
         news: {en: 'News', sw: 'Habari'},
         terms: {en: 'Terms and conditions', sw: 'Sheria na Masharti'},
