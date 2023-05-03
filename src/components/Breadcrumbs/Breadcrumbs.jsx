@@ -1,6 +1,6 @@
 
 import './css/breadcrumbs.css';
-const Breadcrumbs = () => {
+const Breadcrumbs = ({page}) => {
   return <div className="breadcrumbsDiv">
         <div className="breadcrumbs_container">
             <div className="container">
@@ -9,7 +9,7 @@ const Breadcrumbs = () => {
                         <div className="breadcrumbs">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li>Academics</li>
+                                <li>{page}</li>
                             </ul>
                         </div>
                     </div>

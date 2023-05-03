@@ -59,7 +59,7 @@ const News = () => {
 		</div>
 	}
   return <>
-  <Breadcrumbs />
+  <Breadcrumbs page="News"/>
   <div className="blog">
   <div className="container">
 	  <div className="row">

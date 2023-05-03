@@ -2,8 +2,9 @@ import { useContext } from "react";
 import LocalStorageCtx from "../../contexts/LocalStorage";
 import configs from "../../helpers/configs";
 
-const {brand, motto, address, question, content} = configs;
+const {hostweb, brand, motto, address, question, content, social_media} = configs;
 const {home, academics, contact, about, email, phone, quicklinks } = content;
+const  { fb, tw, ig, git, ld, yt}= social_media;
 
 const Footer = () => {
 	const {localContent, setLocalContent} = useContext(LocalStorageCtx);
@@ -23,7 +24,7 @@ const Footer = () => {
 								{/* Footer About */}
 								<div className="footer_section footer_about">
 									<div className="footer_logo_container">
-										<a href="#">
+										<a href={hostweb}>
 											<div className="footer_logo_text">{brand.slice(0,3)}<span>{brand.slice(3)}</span></div>
 										</a>
 									</div>
@@ -32,10 +33,10 @@ const Footer = () => {
 									</div>
 									<div className="footer_social">
 										<ul>
-											<li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href={fb} target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href={git} target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></li>
+											<li><a href={ig} target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+											<li><a href={tw} target="_blank"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
 										</ul>
 									</div>
 								</div>

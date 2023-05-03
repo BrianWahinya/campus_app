@@ -12,7 +12,7 @@ const About = () => {
     const {localContent, setLocalContent} = useContext(LocalStorageCtx);
     const lang = localContent.lang;
   return <>
-  <Breadcrumbs />
+  <Breadcrumbs page="About"/>
   <div className="about">
   <div className="container">
       <div className="row">

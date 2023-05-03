@@ -1,6 +1,8 @@
 const configs = {
     // host: "http://localhost/webtech_api/back-end/endpoints",
-    host: "http://16.16.92.145/backend/endpoints",
+    // host: "http://16.16.92.145/backend/endpoints",
+    host: "https://jkuatwebtech.000webhostapp.com/backend/endpoints",
+    hostweb: "https://jkuatmsc-webtech-uniapp.netlify.app/",
     brand: "SCIT",
     motto: {
         en: "School of Computing and Information Technology",
@@ -110,24 +112,39 @@ const configs = {
         pillars: {
             research: {
                 title: {en:"Research", sw:"Utafiti"},
-                message: {en:"Research msg", sw:"Utafiti msg"},
+                message: {
+                    en:"Our faculty and students are engaged in cutting-edge research across a wide range of disciplines, with the goal of advancing knowledge and making a positive impact in the world.",
+                    sw:"Wafanyakazi na wanafunzi wetu wanajishughulisha na utafiti wa kisasa katika nyanja mbalimbali, lengo likiwa ni kuendeleza maarifa na kuwa na athari chanya katika ulimwengu."
+                },
             },
             innovation: {
                 title: {en:"Innovation", sw:"Ubunifu"},
-                message: {en:"Innovation msg", sw:"Ubunifu msg"},
+                message: {
+                    en:"We strive to create a culture of creativity and entrepreneurship that inspires our students to think outside the box and pursue innovative solutions to complex problems", 
+                    sw:"Tunajitahidi kuunda utamaduni wa ubunifu na ujasiriamali unaowahamasisha wanafunzi wetu kufikiri nje ya boksi na kutafuta suluhisho za ubunifu kwa matatizo magumu"
+                },
             },
             enterprenuership: {
-                title: {en:"Enterprenuership", sw:"Ujasirimali"},
-                message: {en:"Enterprenuership msg", sw:"Ujasirimali msg"},
+                title: {en:"Entrepreneurship", sw:"Ujasirimali"},
+                message: {
+                    en:"We foster a culture of entrepreneurship that encourages our students to develop the skills and mindset needed to start and grow successful businesses. Our faculty and resources are dedicated to providing the support and guidance needed to turn innovative ideas into reality", 
+                    sw:"Tunahamasisha utamaduni wa ujasiriamali unaowapa wanafunzi wetu nafasi ya kukuza ujuzi na mtazamo wa kuanzisha na kukuza biashara zenye mafanikio. Wafanyakazi wetu na rasilimali zetu zinatilia mkazo usaidizi na miongozo inayohitajika kubadili mawazo yenye ubunifu kuwa halisi."
+                },
             },
             nationbuilding: {
                 title: {en:"Nation Building", sw:"Ujenzi wa Nchi"},
-                message: {en:"Nation Building msg", sw:"Ujenzi wa Nchi msg"},
+                message: {
+                    en:"we believe that education plays a critical role in nation-building. Our curriculum is designed to equip our students with the knowledge, skills, and values needed to be responsible and engaged citizens who can contribute to the development of their communities and their country.", 
+                    sw:"Tunaamini kuwa elimu ina jukumu muhimu katika ujenzi wa taifa. Mtaala wetu umebuniwa kuwapa wanafunzi wetu maarifa, ujuzi na maadili yanayohitajika ili kuwa raia wanaojibika na kushiriki katika maendeleo ya jamii na nchi yao."
+                },
             }
         },
         popular_online: {
-            title: {en:"Online Courses", sw:"Kozi za Mtandaoni"},
-            message: {en:"Online Courses", sw:"Kozi za Mtandaoni"},
+            title: {en:"Popular Courses", sw:"Kozi Maarufu"},
+            message: {
+                en:"Our university offers a wide range of courses in various fields of study, including business, engineering, social sciences, and many more. Our courses are designed to provide our students with a well-rounded education that prepares them for success in their chosen careers. Join us and discover the many opportunities our courses can offer you!", 
+                sw:"Chuo chetu kikuu kinatoa kozi mbalimbali katika fani tofauti kama biashara, uhandisi, sayansi ya jamii na zaidi. Kozi zetu zimeundwa kutoa elimu bora inayowawezesha wanafunzi wetu kufanikiwa katika kazi wanazochagua. Jiunge nasi ujifunze fursa nyingi zinazopatikana kupitia kozi zetu!"
+            },
         },
         register_now: {
             title: {en:"Register Now", sw:"Jiandikishe sasa"},

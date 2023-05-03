@@ -91,7 +91,7 @@ const Academics = () => {
     }
 
     return <>
-        <Breadcrumbs />
+        <Breadcrumbs page="Academics" />
         <div className="courses">
         <div className="container">
         <div className="row">
