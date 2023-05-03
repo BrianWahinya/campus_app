@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import LocalStorageCtx from '../../contexts/LocalStorage';
 import './css/singleactivity.css'
 
-const SingleActivity = ({news, imgs}) => {
+const SingleActivity = ({data, imgs}) => {
     const {localContent, setLocalContent} = useContext(LocalStorageCtx);
 	const lang = localContent.lang;
 

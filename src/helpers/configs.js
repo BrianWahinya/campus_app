@@ -38,7 +38,9 @@ const configs = {
         staff_login: {en: 'Staff Login', sw: 'Wafanyakazi Kuingia'},
         excited: {en: 'JOIN US!!', sw: 'JIUNGE NASI!!'},
         description: {en: 'Description', sw: 'Maelezo'},
-        curriculum: {en: 'Curriculum', sw: 'Mtaala'}
+        curriculum: {en: 'Curriculum', sw: 'Mtaala'},
+        posted_on: {en: 'Posted on', sw: 'Ilichapishwa'},
+        by: {en: 'By', sw: 'Na'}
     },
     topics: {
         travel: "Travel",

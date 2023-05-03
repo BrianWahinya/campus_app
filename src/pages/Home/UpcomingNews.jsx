@@ -29,7 +29,7 @@ const UpcomingNews = () => {
             })
             .then(response => response.json())
             .then(resp => {
-                console.log('newsByLang', resp);
+                console.log('upcomingnewsByLang', resp);
                 setIsLoading(false);
                 setData(dt => {
                     return resp.response;
@@ -40,24 +40,24 @@ const UpcomingNews = () => {
     },[lang])
 
     const configureNews1 = (item) => {
-
+        const {title, author, description, created_on} = item;
         return <div className="col-lg-7 news_col">
             {isLoading && <Loader />}
             {!isLoading && !item && 'No news present'}
             {!isLoading && item && <div className="news_post_large_container">
                 <div className="news_post_large">
                     <div className="news_post_image"><img src="images/news_1.jpg" alt="" /></div>
-                    <div className="news_post_large_title"><CustomModal btn={{text:item.title}} head={""} body={<SingleNews />}/></div>
+                    <div className="news_post_large_title"><CustomModal btn={{text:title}} head={""} body={<SingleNews data={item} />}/></div>
                     <div className="news_post_meta">
                         <ul>
-                            <li><CustomModal btn={{text:item.author}} head={""} body={<SingleNews />}/></li>
-                            <li><CustomModal btn={{text:item.created_on}} head={""} body={<SingleNews />}/></li>
+                            <li><CustomModal btn={{text:author}} head={""} body={<SingleNews data={item} />}/></li>
+                            <li><CustomModal btn={{text:created_on}} head={""} body={<SingleNews data={item} />}/></li>
                         </ul>
                     </div>
                     <div className="news_post_text">
-                        <p>{item.description}</p>
+                        <p>{description}</p>
                     </div>
-                    <div className="news_post_link"><CustomModal btn={{text:"read more"}} head={""} body={<SingleNews />}/></div>
+                    <div className="news_post_link"><CustomModal btn={{text:"read more"}} head={""} body={<SingleNews data={item} />}/></div>
                 </div>
             </div>}
         </div>
@@ -68,11 +68,11 @@ const UpcomingNews = () => {
             {isLoading && <Loader />}
             {!isLoading && items && <div className="news_posts_small">
                 {items.map((item, idx) => <div key={idx} className="news_post_small">
-                    <div className="news_post_small_title"><CustomModal btn={{text:item.title}} head={""} body={<SingleNews />}/></div>
+                    <div className="news_post_small_title"><CustomModal btn={{text:item.title}} head={""} body={<SingleNews data={item} />}/></div>
                     <div className="news_post_meta">
                         <ul>
-                            <li><CustomModal btn={{text:item.author}} head={""} body={<SingleNews />}/></li>
-                            <li><CustomModal btn={{text:item.created_on}} head={""} body={<SingleNews />}/></li>
+                            <li><CustomModal btn={{text:item.author}} head={""} body={<SingleNews data={item} />}/></li>
+                            <li><CustomModal btn={{text:item.created_on}} head={""} body={<SingleNews data={item} />}/></li>
                         </ul>
                     </div>
                 </div>)}
@@ -91,8 +91,8 @@ const UpcomingNews = () => {
           </div>
       </div>
       <div className="row news_row">
-        {configureNews1(data[0])}
-        {configureNewsRest(data.slice(1, 4))}
+        {data.length && configureNews1(data[0])}
+        {data.length && configureNewsRest(data.slice(1, 4))}
       </div>
   </div>
 </div>
