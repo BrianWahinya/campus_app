@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react'
 import { CustomModal, Loader } from '../../components';
 import LocalStorageCtx from '../../contexts/LocalStorage';
 import configs from '../../helpers/configs';
+import { DEPE } from '../../helpers/utils';
 import SingleCourse from '../Academics/SingleCourse';
 
 const { host, text, content } = configs;
@@ -20,6 +21,13 @@ const PopularCourses = () => {
 
     const [data, setData] = useState([])
     const [isLoading, setIsLoading] = useState(false);
+
+    const changeEntity = (e) => {
+        const id = e.target.id.slice(1).toLowerCase();
+        // console.log(id);
+        setLocalContent(lc => ({...lc, entity:id}));
+        DEPE.scrollToTop();
+    }
 
     useEffect(() => {
         setIsLoading(true);
@@ -91,7 +99,7 @@ const PopularCourses = () => {
       </div>
       <div className="row">
           <div className="col">
-              <div className="courses_button trans_200"><a role="button">{content.view_all_courses[lang]}</a></div>
+              <div className="courses_button trans_200"><a role="button" onClick={changeEntity} id="aAcademics">{content.view_all_courses[lang]}</a></div>
           </div>
       </div>
   </div>
