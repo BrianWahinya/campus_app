@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
-// import Redirect from './redirect/Redirect';
+import Redirect from './redirect/Redirect';
 
 setTimeout(() => {
   const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
     <React.StrictMode>
-      <App />
-      {/* <Redirect /> */}
+      {/* <App /> */}
+      <Redirect />
     </React.StrictMode>
   );
 }, 2000)
