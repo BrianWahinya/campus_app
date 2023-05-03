@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState } from "react";
-import { Loader } from "../../components";
+import { CustomModal, Loader } from "../../components";
 import LocalStorageCtx from "../../contexts/LocalStorage";
 import configs from "../../helpers/configs";
 import { DEPE } from "../../helpers/utils";
+import SingleActivity from "../Activities/SingleActivity";
 
 const { text, host } = configs;
 const { title, message } = text.upcoming_act;
@@ -55,7 +56,7 @@ const UpcomingNews = () => {
                                 </div>
                             </div>
                             <div className="event_content">
-                                <div className="event_title"><a href="#">{title}</a></div>
+                                <div className="event_title"><CustomModal btn={{text:title}} head={""} body={<SingleActivity />}/></div>
                                 <div className="event_info_container">
                                     <div className="event_info"><i className="fa fa-clock-o" aria-hidden="true"></i><span>15.00 - 19.30</span></div>
                                     <div className="event_info"><i className="fa fa-map-marker" aria-hidden="true"></i><span>{item.venue}</span></div>

@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import fetchNews from "../../api/fetchNews";
-import { Loader } from "../../components";
+import { CustomModal, Loader } from "../../components";
 import LocalStorageCtx from "../../contexts/LocalStorage";
 import configs from "../../helpers/configs";
+import SingleNews from "../News/SingleNews";
 
 const { text, host } = configs;
 const { title, message } = text.latest_news;
@@ -46,17 +47,17 @@ const UpcomingNews = () => {
             {!isLoading && item && <div className="news_post_large_container">
                 <div className="news_post_large">
                     <div className="news_post_image"><img src="images/news_1.jpg" alt="" /></div>
-                    <div className="news_post_large_title"><a href="blog_single.html">{item.title}</a></div>
+                    <div className="news_post_large_title"><CustomModal btn={{text:item.title}} head={""} body={<SingleNews />}/></div>
                     <div className="news_post_meta">
                         <ul>
-                            <li><a href="#">{item.author}</a></li>
-                            <li><a href="#">{item.created_on}</a></li>
+                            <li><CustomModal btn={{text:item.author}} head={""} body={<SingleNews />}/></li>
+                            <li><CustomModal btn={{text:item.created_on}} head={""} body={<SingleNews />}/></li>
                         </ul>
                     </div>
                     <div className="news_post_text">
                         <p>{item.description}</p>
                     </div>
-                    <div className="news_post_link"><a href="blog_single.html">read more</a></div>
+                    <div className="news_post_link"><CustomModal btn={{text:"read more"}} head={""} body={<SingleNews />}/></div>
                 </div>
             </div>}
         </div>
@@ -67,11 +68,11 @@ const UpcomingNews = () => {
             {isLoading && <Loader />}
             {!isLoading && items && <div className="news_posts_small">
                 {items.map((item, idx) => <div key={idx} className="news_post_small">
-                    <div className="news_post_small_title"><a href="blog_single.html">{item.title}</a></div>
+                    <div className="news_post_small_title"><CustomModal btn={{text:item.title}} head={""} body={<SingleNews />}/></div>
                     <div className="news_post_meta">
                         <ul>
-                            <li><a href="#">{item.author}</a></li>
-                            <li><a href="#">{item.created_on}</a></li>
+                            <li><CustomModal btn={{text:item.author}} head={""} body={<SingleNews />}/></li>
+                            <li><CustomModal btn={{text:item.created_on}} head={""} body={<SingleNews />}/></li>
                         </ul>
                     </div>
                 </div>)}

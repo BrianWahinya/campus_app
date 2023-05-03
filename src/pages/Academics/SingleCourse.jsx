@@ -1,6 +1,15 @@
+import { useContext } from 'react';
+import LocalStorageCtx from '../../contexts/LocalStorage';
+import configs from '../../helpers/configs'
 import './css/singlecourse.css'
 
+const {content} = configs;
+const {curriculum, description} = content;
+
 const SingleCourse = ({course, img}) => {
+    const {localContent, setLocalContent} = useContext(LocalStorageCtx);
+	const lang = localContent.lang;
+
     // console.log(course)
     return <div className="singlecourse">
     <div className="container">
@@ -17,8 +26,8 @@ const SingleCourse = ({course, img}) => {
                     {/* Course Tabs */}
                     <div className="course_tabs_container">
                         <div className="tabs d-flex flex-row align-items-center justify-content-start">
-                            <div className="tab active">description</div>
-                            <div className="tab">curriculum</div>
+                            <div className="tab active">{description[lang]}</div>
+                            <div className="tab">{curriculum[lang]}</div>
                         </div>
                         <div className="tab_panels">
 

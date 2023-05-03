@@ -42,7 +42,7 @@ const PopularCourses = () => {
             })
             .then(response => response.json())
             .then(resp => {
-                console.log('PopCoursesAll', resp);
+                // console.log('PopCoursesAll', resp);
                 setIsLoading(false);
                 const filterCourses = resp.response.filter((rs => rs.cs_id));
                 setData(filterCourses.slice(4, 7));
@@ -50,7 +50,7 @@ const PopularCourses = () => {
                 setIsLoading(false);
             })
         }, 2000)
-    }, [])
+    }, [lang])
 
     const generatePopObj = (datos) => {
         return <>

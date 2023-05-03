@@ -1,8 +1,8 @@
 const configs = {
-    // host: "http://localhost/webtech_api/back-end/endpoints",
+    host: "http://localhost/webtech_api/backend/endpoints",
     // host: "http://16.16.92.145/backend/endpoints",
-    host: "https://jkuatwebtech.000webhostapp.com/backend/endpoints",
-    hostweb: "https://jkuatmsc-webtech-uniapp.netlify.app/",
+    // host: "https://jkuatwebtech.000webhostapp.com/backend/endpoints",
+    hostweb: "https://jkuatwebtech.000webhostapp.com/",
     brand: "SCIT",
     motto: {
         en: "School of Computing and Information Technology",
@@ -36,7 +36,9 @@ const configs = {
         submit_now: {en: 'Submit Now', sw: 'Wasilisha Sasa'},
         search: {en: 'Search', sw: 'Tafuta'},
         staff_login: {en: 'Staff Login', sw: 'Wafanyakazi Kuingia'},
-        excited: {en: 'JOIN US!!', sw: 'JIUNGE NASI!!'}
+        excited: {en: 'JOIN US!!', sw: 'JIUNGE NASI!!'},
+        description: {en: 'Description', sw: 'Maelezo'},
+        curriculum: {en: 'Curriculum', sw: 'Mtaala'}
     },
     topics: {
         travel: "Travel",

@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import LocalStorageCtx from '../../contexts/LocalStorage';
-import './css/singlenews.css'
+import './css/singleactivity.css'
 
-const SingleNews = ({news, imgs}) => {
+const SingleActivity = ({news, imgs}) => {
     const {localContent, setLocalContent} = useContext(LocalStorageCtx);
 	const lang = localContent.lang;
 
@@ -34,4 +34,4 @@ const SingleNews = ({news, imgs}) => {
     </div>
 }
 
-export default SingleNews
+export default SingleActivity

@@ -1,21 +1,16 @@
 
-import { Breadcrumbs, CustomModal } from '../../components';
-import SingleNews from './SingleNews';
-import './css/news.css';
-
-const News = () => {
+import { Breadcrumbs } from '../../components';
+import './css/activities.css';
+const Activities = () => {
 	const generateNewsItemImg = (idx) => {
-		const title = "Here’s What You Need to Know About Online Testing";
-		const author = "admin";
-		const date = "november 11, 2017";
 		return <div className="blog_post trans_200">
 		<div className="blog_post_image"><img src={`images/blog_${idx}.jpg`} alt="" /></div>
 		<div className="blog_post_body">
-			<div className="blog_post_title"><CustomModal btn={{text:title}} head={""} body={<SingleNews />}/></div>
+			<div className="blog_post_title"><a href="blog_single.html">Here’s What You Need to Know About Online Testing</a></div>
 			<div className="blog_post_meta">
 				<ul>
-					<li><CustomModal btn={{text:author}} head={""} body={<SingleNews />}/></li>
-					<li><CustomModal btn={{text:date}} head={""} body={<SingleNews />}/></li>
+					<li><a href="#">admin</a></li>
+					<li><a href="#">november 11, 2017</a></li>
 				</ul>
 			</div>
 			<div className="blog_post_text">
@@ -90,4 +85,4 @@ const News = () => {
   </>
 }
 
-export default News
+export default Activities
